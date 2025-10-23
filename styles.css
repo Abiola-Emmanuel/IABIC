@@ -321,11 +321,20 @@ nav a {
 
 .abt-right a {
   text-decoration: none;
+  font-family: var(--mont);
+  font-size: 20px;
   color: green;
+  transition: transform;
+}
+
+.abt-right a:hover {
+  transition-duration: 0.3s;
+  transform: scale(1.1);
 }
 
 .abt-right h2 {
   font-weight: 400;
+  font-family: var(--mont);
   color: rgb(64, 179, 62);
 }
 
@@ -389,20 +398,21 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .trees {
-  height: 50%;
+  height: 40%;
   width: 95%;
   position: relative;
   margin: auto;
+  object-position: top;
 }
 
 
 
 .rgt-two {
-  height: 50%;
+  height: 40%;
   display: flex;
   justify-content: space-around;
 }
@@ -447,17 +457,6 @@ nav a {
   color: rgb(64, 179, 62);
 } */
 
-.num-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, .4);
-}
 
 .mission {
   padding: 40px 30px;
@@ -572,7 +571,7 @@ nav a {
 
 
 .core h2 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 25px;
 }
@@ -583,14 +582,19 @@ nav a {
 }
 
 .core p {
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--mont);
   color: rgb(2, 52, 48);
 }
 
 .core1,
 .core2,
-.core3 {
+.core3,
+.core4,
+.core5 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 25%;
   /* border: 1px solid rgb(64, 179, 62); */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -805,7 +809,9 @@ footer a {
 
   .core1,
   .core2,
-  .core3 {
+  .core3,
+  .core4,
+  .core5 {
     width: 100%;
   }
 

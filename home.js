@@ -63,6 +63,8 @@ const workTitle = document.querySelector('.work .title')
 const coreP = document.querySelector('.core .d-white')
 const coreP2 = document.querySelector('.core .d-white2')
 const coreP3 = document.querySelector('.core .d-white3')
+const coreP4 = document.querySelector('.core .d-white4')
+const coreP5 = document.querySelector('.core .d-white5')
 
 function darkMode() {
   const body = document.getElementById('body');
@@ -81,6 +83,8 @@ function darkMode() {
     coreP.style.color = 'white'
     coreP2.style.color = 'white'
     coreP3.style.color = 'white'
+    coreP4.style.color = 'white'
+    coreP5.style.color = 'white'
   }
 }
 
