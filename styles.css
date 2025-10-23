@@ -226,7 +226,7 @@ nav a {
   font-weight: 700;
   line-height: 62px;
   color: rgb(255, 255, 255);
-  font-size: 46px;
+  font-size: 56px;
 }
 
 .hero-text p {
@@ -287,7 +287,10 @@ nav a {
 
 .abt-title {
   font-size: 40px;
+  font-family: var(--mont);
   text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
   color: rgb(2, 52, 48)
 }
 
@@ -313,12 +316,17 @@ nav a {
 }
 
 .abt-right p {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .abt-right a {
   text-decoration: none;
   color: green;
+}
+
+.abt-right h2 {
+  font-weight: 400;
+  color: rgb(64, 179, 62);
 }
 
 .numbers {
@@ -340,19 +348,19 @@ nav a {
 }
 
 .num-left .title {
-  font-size: 30px;
-  font-weight: 700;
-  color: rgb(2, 52, 48);
+  font-size: 40px;
+  font-weight: 400;
+  color: rgb(64, 179, 62);
   line-height: 50px;
   font-family: var(--mont);
 }
 
 .num-left p {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 27px;
   color: rgb(2, 52, 48);
   line-height: 27px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--mont);
 }
 
@@ -473,14 +481,14 @@ nav a {
 
 .mission-left h2 {
   font-size: 36px;
-  font-weight: 700;
-  color: rgb(2, 52, 48);
+  font-weight: 500;
+  color: rgb(64, 179, 62);
   line-height: 50px;
   font-family: var(--mont);
 }
 
 .mission-left p {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 27px;
   line-height: 27px;
   font-size: 16px;
@@ -737,7 +745,7 @@ footer a {
   }
 
   .hero-text h2 {
-    font-size: 35px;
+    font-size: 25px;
     line-height: 45px;
   }
 

@@ -37,7 +37,9 @@ new PureCounter({
   legacy: true,
 })
 
-AOS.init()
+AOS.init({
+  once: true
+})
 
 const menuOverlay = document.getElementById('menuOverlay');
 const overlayButton = document.querySelector('.menuOverlay button')
