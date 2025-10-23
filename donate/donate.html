@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DONATE</title>
+  <link rel="shortcut icon" href="/images/logo-removebg-preview.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="donate.css">
+  <link rel="stylesheet" href="/aos-master/dist/aos.css">
+</head>
+
+<body>
+  <div class="menuOverlay" id="menuOverlay">
+    <button onclick="closeMenu()"><i class="fa fa-close"></i></button>
+    <a href="/home/index.html">HOME</a>
+    <a href="/about/about.html">ABOUT</a>
+    <a href="/donate/donate.html">DONATE</a>
+    <a href="/contact/contact.html">CONTACT</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div>
+      <a href="/home/index.html">
+        <img src="/images/logo-removebg-preview.png" width="50px" alt="">
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="/home/index.html">HOME</a>
+      <a href="/about/about.html">ABOUT</a>
+      <a href="/donate/donate.html">DONATE</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="/contact/contact.html">CONTACT <span><i class="fa fa-arrow-right"></i></span></a>
+      <button onclick="showMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+
+
+  </nav>
+
+  <div class="donate">
+    <h2 class="title">DONATE TO CHANGE PEOPLE'S <br> LIVES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur et condimentum aliquet <br> auctor diam vulputate est ullamcorper
+      tincidunt arcu orci et elit <br> ullamcorper volutpat</p>
+
+    <div class="prices">
+
+      <div class="p1" data-aos="fade-up">
+        <i class="fa fa-user" data-aos="fade-up"></i>
+        <h3>$100.00</h3>
+        <p>Help us provide basic hygiene supplies to communities in need, <br> reducing the spread of bacterial
+          infections.
+        </p>
+        <button onclick="donate()">DONATE</button>
+      </div>
+
+      <div class="p1" data-aos="fade-up">
+        <div>
+          <i class="fa fa-users" data-aos="fade-up"></i>
+        </div>
+        <h3>$300.00</h3>
+        <p>Support infection prevention workshops that educate families and <br> healthcare workers on life-saving
+          hygiene
+          practices.</p>
+        <button onclick="donate()">DONATE</button>
+      </div>
+
+      <div class="p1" data-aos="fade-up">
+        <i class="fa fa-users" data-aos="fade-up"></i>
+        <h3>$500.00</h3>
+        <p>Fund medical outreach programs that deliver clean water, <br>equipments, and essential healthcare
+          support to vulnerable areas.</p>
+        <button onclick="donate()">DONATE</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="custom">
+    <div>
+      <img src="/images/custom.webp" alt="Custom amount" width="50px">
+      <h2>CUSTOM AMOUNT ?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur et <br> condimentum aliquet auctor diam vulputate <br> est ullamcorper
+        tincidunt arcu orci et elit.</p>
+    </div>
+
+
+    <div>
+      <a class="support" href="/contact/contact.html">CONTACT US
+        <span><i class="fa fa-angle-right"></i></span></a>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+
+  <div class="values">
+    <h2 class="title">THE VALUES THAT DRIVE EVERYTHING WE DO</h2>
+
+    <div class="vals">
+      <div class="val1">
+        <img src="/images/climate.svg" alt="value" width="50px">
+        <h2>AWARENESS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur et condimentum aliquet auctor diam.</p>
+      </div>
+
+      <div class="val2">
+        <img src="/images/reduce.svg" alt="value" width="50px">
+        <h2>CARE & LOVE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur et condimentum aliquet auctor diam.</p>
+      </div>
+
+      <div class="val3">
+        <img src="/images/preserve.svg" alt="value" width="50px">
+        <h2>COMMITMENT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur et condimentum aliquet auctor diam.</p>
+      </div>
+
+      <div class="val4">
+        <img src="/images/ecosystem.svg" alt="value" width="50px">
+        <h2>SUSTAINABILITY</h2>
+        <p>Lorem ipsum dolor sit amet consectetur et condimentum aliquet auctor diam.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 30px;">
+      <a class="support" href="#">SUPPORT OUR CAUSE
+        <span><i class="fa fa-angle-right"></i></span></a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="foot-left">
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <img src="/images/logo-removebg-preview.png" alt="" width="50px">
+        <a href="#">IABIC</a>
+      </div>
+
+      <p>Our staff and experts are based in over 30 <br> countries around the globe </p>
+
+      <p>&copy; Copywright <span id="date"></span></p>
+
+      <div class="socials">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-right">
+      <img src="/images/footer2.jpg" alt="">
+    </div>
+  </footer>
+</body>
+<script src="/aos-master/dist/aos.js"></script>
+<script>
+  AOS.init()
+  const menuOverlay = document.getElementById('menuOverlay');
+  const overlayButton = document.querySelector('.menuOverlay button')
+
+  function showMenu() {
+    menuOverlay.style.width = '50%';
+    overlayButton.style.display = 'block'
+
+  }
+
+  function closeMenu() {
+    menuOverlay.style.width = '0';
+    overlayButton.style.display = 'none'
+  }
+
+  function donate() {
+    var price = prompt('How much do you want to donate?')
+    alert('Thank you for your donation of: ' + '$' + price)
+  }
+
+  const footDate = document.getElementById('date')
+
+  const getDate = new Date();
+  const year = getDate.getFullYear()
+
+  footDate.innerHTML = year
+</script>
+
+</html>
