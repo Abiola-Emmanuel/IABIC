@@ -450,6 +450,7 @@ nav a {
   line-height: 62px;
   color: rgb(64, 179, 62);
   font-weight: 900;
+  font-family: var(--mont);
 }
 
 /* 
@@ -462,7 +463,7 @@ nav a {
   padding: 40px 30px;
   border-radius: 30px;
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: auto;
   gap: 30px;
   align-items: center;
@@ -574,6 +575,7 @@ nav a {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
+  font-family: var(--mont);
 }
 
 .core i {
@@ -638,10 +640,14 @@ nav a {
 }
 
 .resources h2 {
-  font-family: var(--roboto);
+  font-family: var(--mont);
   font-size: 22px;
   font-weight: 500;
   padding: 20px;
+}
+
+.resources p {
+  font-family: var(--mont);
 }
 
 .res-left,
