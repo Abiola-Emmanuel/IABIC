@@ -2,6 +2,10 @@
   --mont: 'Montserrat';
 }
 
+* {
+  margin: 0;
+}
+
 body {
   position: relative;
   transition: backgroud-color;
@@ -563,63 +567,43 @@ nav a {
 
 
 footer {
-  display: flex;
-  align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer a {
   text-decoration: none;
   color: green;
+  font-family: var(--mont);
 }
 
-.foot-left {
-  /* border: 1px solid red; */
-  width: 50%;
-  padding: 50px;
+.foot {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
   gap: 30px;
 }
 
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
 
 .socials a {
-  background-color: white;
-  padding: 10px 15px;
-  border-radius: 100%;
   transition: transform;
-  transition: background-color;
   transition-duration: 0.4s;
 }
 
+
 .socials a:hover {
-  background-color: rgb(2, 52, 48);
-  color: white;
   transform: scale(1.1);
 }
 
-.foot-left p {
-  font-family: var(--roboto);
+.foot p {
+  font-family: var(--mont);
   font-weight: 500;
-  font-size: 16px;
-}
-
-.foot-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.foot-right img {
-  width: 80%;
-  margin: auto;
-  object-fit: cover;
-  height: 80%;
+  font-size: 14px;
 }
 
 .dark {
@@ -726,5 +710,8 @@ footer a {
     width: 70%;
   }
 
+  .socials {
+    gap: 10px;
+  }
 
 }
