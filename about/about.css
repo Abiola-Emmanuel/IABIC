@@ -8,6 +8,11 @@ body {
   transition-duration: 0.4s;
 }
 
+h2,
+p {
+  font-family: var(--mont);
+}
+
 .menuOverlay {
   position: fixed;
   z-index: 3000;
@@ -371,9 +376,9 @@ nav a {
 }
 
 .values .title {
-  font-size: 30px;
-  font-weight: 700;
-  /* color: rgb(2, 52, 48); */
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(64, 179, 62);
   line-height: 50px;
   font-family: var(--mont);
   text-align: center;
