@@ -264,7 +264,7 @@ nav a {
   font-family: var(--mont);
   font-weight: 400;
   color: rgb(64, 179, 62);
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .com {
@@ -307,7 +307,7 @@ nav a {
 
 .com h2 {
   position: absolute;
-  bottom: 16px;
+  bottom: 30px;
   left: 10px;
   font-size: 20px;
   color: white;
