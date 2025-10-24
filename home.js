@@ -1,3 +1,13 @@
+window.addEventListener('scroll', function () {
+  const nav = document.getElementById('nav');
+  if (window.scrollY > 50) {
+    nav.classList.add('bg-white');
+
+  } else {
+    nav.classList.remove('bg-white')
+  }
+})
+
 new PureCounter({
   selector: ".purecounter",
 

@@ -15,6 +15,14 @@ body {
   transition-duration: var(--transition-duration);
 }
 
+.bg-white {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-white a {
+  color: rgb(2, 52, 48);
+}
 
 
 .white {
@@ -99,7 +107,6 @@ body {
 
 nav {
   position: fixed;
-  background-color: white;
   top: 0;
   right: 0;
   left: 0;
@@ -108,17 +115,24 @@ nav {
   align-items: center;
   padding: 5px 10px;
   z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  transition: background-color;
+  transition-duration: 0.4s;
 }
 
 nav a {
   text-decoration: none;
-  color: rgb(2, 52, 48);
+  /* color: rgb(2, 52, 48); */
+  color: white;
   font-family: var(--mont);
   font-weight: 700;
   font-size: 13px;
   line-height: 27px;
 }
+
+
+
+
 
 .nav-links {
   display: flex;
