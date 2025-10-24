@@ -185,6 +185,11 @@ nav a {
   gap: 20px;
 }
 
+
+.abt-right p {
+  font-family: var(--mont);
+}
+
 .vision {
   width: 90%;
   margin: auto;
