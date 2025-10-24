@@ -154,7 +154,7 @@ nav a {
 .about {
   display: flex;
   gap: 50px;
-  width: 80%;
+  width: 90%;
   margin: 100px auto;
 }
 
@@ -164,9 +164,9 @@ nav a {
 
 .working {
   font-family: var(--mont);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 62px;
-  /* color: rgb(2, 52, 48); */
+  color: rgb(64, 179, 62);
   font-size: 46px;
 }
 
@@ -180,6 +180,42 @@ nav a {
 
 .abt-right {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vision {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.vision .title {
+  font-family: var(--mont);
+  font-weight: 400;
+  color: rgb(64, 179, 62);
+  font-size: 40px;
+}
+
+.vision-left {
+  width: 50%;
+}
+
+.vision-right {
+  width: 50%;
+}
+
+.vision-right img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.vision p {
+  font-family: var(--mont);
 }
 
 .support {
@@ -212,9 +248,10 @@ nav a {
 
 .community .title {
   text-align: center;
-  font-family: var(--bebas);
-  font-size: 25px;
-  color: rgb(2, 52, 48);
+  font-family: var(--mont);
+  font-weight: 400;
+  color: rgb(64, 179, 62);
+  font-size: 40px;
 }
 
 .com {
@@ -261,7 +298,7 @@ nav a {
   left: 10px;
   font-size: 20px;
   color: white;
-  font-family: var(--roboto);
+  font-family: var(--mont);
 }
 
 .com p {
@@ -292,6 +329,35 @@ nav a {
 
 .com a:hover {
   transform: scale(1.1);
+}
+
+.mission {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+}
+
+.mission .title {
+  font-family: var(--mont);
+  font-weight: 400;
+  color: rgb(64, 179, 62);
+  font-size: 40px;
+}
+
+.mission-left {
+  width: 50%;
+}
+
+.mission-right {
+  width: 50%;
+}
+
+.mission-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .values {
@@ -528,6 +594,18 @@ footer a {
 
   .abt-right img {
     display: none;
+  }
+
+  .vision,
+  .mission {
+    flex-direction: column;
+  }
+
+  .vision-left,
+  .vision-right,
+  .mission-left,
+  .mission-right {
+    width: 100%;
   }
 
   .com-div {

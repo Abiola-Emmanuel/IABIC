@@ -51,7 +51,7 @@
 
   <div class="about">
     <div class="abt-left">
-      <h2 class="working">Working Together for a Safer, Healthier World.</h2>
+      <h2 class="working">Together, We Create a Safer and Healthier World</h2>
 
       <img src="/images/scientist.jpg" alt="" data-aos="zoom-in">
     </div>
@@ -74,7 +74,19 @@
   <!-- OUR VISION -->
 
   <div class="vision">
+    <div class="vision-left">
+      <h2 class="title">OUR VISION</h2>
 
+      <p>Our vision is to build a society where every community embraces good hygiene as a way of life. We strive to
+        make cleanliness a daily culture by promoting bacterial infection prevention through education, sanitation
+        programs, and behavioural change advocacy. Through collective awareness and sustained community engagement, we
+        aim to create healthier environments and empower individuals to take responsibility for their well-being and
+        that of others.</p>
+    </div>
+
+    <div class="vision-right">
+      <img src="/images/vision.jpg" alt="Our Vision">
+    </div>
   </div>
 
   <!-- COMMUNTIY -->
@@ -125,10 +137,26 @@
 
   </div>
 
+  <!-- OUR MISSION -->
+
+  <div class="mission">
+    <div class="mission-left">
+      <h2 class="title">OUR MISSION</h2>
+      <p>Our mission is to prevent bacterial infections and promote hygiene education by supporting clean sanitation
+        infrastructures and inspiring lasting behavioral change across schools and communities. We are dedicated to
+        empowering individuals with the knowledge and resources to practice effective hygiene, reduce disease
+        transmission, and foster environments where health, safety, and well-being become shared community values.</p>
+    </div>
+
+    <div class="mission-right">
+      <img src="/images/mission.jpg" alt="">
+    </div>
+  </div>
+
   <!-- VALUES -->
 
   <div class="values">
-    <h2 class="title">THE VALUES THAT DRIVE EVERYTHING WE DO</h2>
+    <h2 class="title">WHAT INSPIRES EVERYTHING WE DO </h2>
 
     <div class="vals">
       <div class="val1">
@@ -179,7 +207,7 @@
       <div class="worker">
         <img src="/images/w4.jpg" alt="Worker1" width="100px">
         <h2>MICHAEL ADEWALE</h2>
-        <p>CEO * Founder</p>
+        <p>CTO</p>
         <div class="worker-social">
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
@@ -189,7 +217,7 @@
       </div>
       <div class="worker">
         <img src="/images/w1.jpg" alt="Worker2" width="100px">
-        <h2>CHIOMA EZ</h2>
+        <h2>CHIOMA EZE</h2>
         <p>VP of Marketting</p>
         <div class="worker-social">
           <a href="#"><i class="fa fa-facebook"></i></a>
@@ -212,7 +240,7 @@
       <div class="worker">
         <img src="/images/w3.jpg" alt="Worker4" width="100px">
         <h2>DANIEL OKORO</h2>
-        <p>CTO & Co-Founder</p>
+        <p>Co-Founder</p>
         <div class="worker-social">
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
@@ -286,7 +314,9 @@
     autoplayHoverPause: true
   });
 
-  AOS.init()
+  AOS.init({
+    once: true
+  })
 
 
   const menuOverlay = document.getElementById('menuOverlay');
