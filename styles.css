@@ -1,5 +1,5 @@
 :root {
-  --mont: 'Montserrat';
+  --mont: 'Montserrat', sans-serif;
   --transition-duration: 0.3s
 }
 
@@ -23,7 +23,6 @@ body {
 .bg-white a {
   color: rgb(2, 52, 48);
 }
-
 
 .white {
   color: white;

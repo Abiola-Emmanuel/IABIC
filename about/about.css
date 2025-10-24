@@ -1,5 +1,5 @@
 :root {
-  --mont: 'Montserrat';
+  --mont: 'Montserrat', sans-serif;
 }
 
 * {
@@ -701,13 +701,8 @@ footer a {
   }
 
 
-  footer {
-    flex-direction: column;
-  }
-
-  .foot-left,
-  .foot-right {
-    width: 70%;
+  .socials {
+    gap: 10px;
   }
 
   .socials {

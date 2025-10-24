@@ -1,5 +1,5 @@
 :root {
-  --mont: 'Montserrat';
+  --mont: 'Montserrat', sans-serif;
 }
 
 * {
@@ -10,6 +10,12 @@
 
 body {
   position: relative;
+}
+
+h2,
+p,
+a {
+  font-family: var(--mont);
 }
 
 .menuOverlay {
@@ -305,6 +311,11 @@ textarea {
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
+  margin-top: 20px;
+}
+
+.also {
+  padding-top: 100px;
 }
 
 footer {
@@ -420,7 +431,7 @@ footer a {
   }
 
   .also {
-    padding-top: 250px;
+    padding-top: 50px;
   }
 
   .also .title {
@@ -438,23 +449,18 @@ footer a {
     width: 80%;
   }
 
-  footer {
-    flex-direction: column;
-  }
-
-  .foot-left,
-  .foot-right {
-    width: 100%;
+  .socials {
+    gap: 10px;
   }
 
   .contact-divs {
     flex-direction: column;
   }
 
-  .contact-left,
+  /* .contact-left,
   .contact-right {
     width: 100%;
     height: 400px;
-  }
+  } */
 
 }
