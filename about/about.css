@@ -9,7 +9,8 @@ body {
 }
 
 h2,
-p {
+p,
+a {
   font-family: var(--mont);
 }
 
@@ -193,6 +194,7 @@ nav a {
 
 .abt-right p {
   font-family: var(--mont);
+  line-height: 22px;
 }
 
 .vision {
@@ -226,6 +228,7 @@ nav a {
 
 .vision p {
   font-family: var(--mont);
+  line-height: 22px;
 }
 
 .support {
@@ -359,6 +362,10 @@ nav a {
   width: 50%;
 }
 
+.mission-left p {
+  line-height: 22px;
+}
+
 .mission-right {
   width: 50%;
 }
@@ -369,6 +376,7 @@ nav a {
   object-fit: cover;
   border-radius: 30px;
 }
+
 
 .values {
   width: 90%;
@@ -450,16 +458,15 @@ nav a {
   background-color: white;
   border-radius: 30px;
   padding: 20px 0px;
-  transition: transform;
-  transition: box-shadow;
   transition-duration: 0.5s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(128, 255, 106, 0.2), 0 6px 20px 0 rgba(116, 255, 106, 0.19);
+  transition: transform;
+  transition-duration: 0.4s;
 }
 
 .worker:hover {
   cursor: pointer;
   transform: scale(1.1);
-  box-shadow: 0 4px 8px 0 rgba(128, 255, 106, 0.2), 0 6px 20px 0 rgba(116, 255, 106, 0.19);
 }
 
 .worker h2 {
@@ -489,6 +496,47 @@ nav a {
 .worker-social i:hover {
   color: rgb(64, 179, 62);
 
+}
+
+.founder {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.founder .title {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(64, 179, 62);
+  line-height: 50px;
+  font-family: var(--mont);
+  text-align: center;
+}
+
+.founder-div {
+  display: flex;
+  gap: 30px;
+}
+
+.founder-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.founder-right p {
+  font-size: 18px;
 }
 
 .gallery {
@@ -607,15 +655,32 @@ footer a {
   }
 
   .vision,
-  .mission {
+  .mission,
+  .founder,
+  .founder-div {
     flex-direction: column;
   }
 
   .vision-left,
   .vision-right,
   .mission-left,
-  .mission-right {
+  .mission-right,
+  .founder-left,
+  .founder-right {
     width: 100%;
+  }
+
+  .founder-right {
+    padding: 0;
+  }
+
+  .foot-right p {
+    font-size: 10px;
+  }
+
+  .community .titl,
+  .values .title {
+    font-size: 30px;
   }
 
   .com-div {
@@ -633,6 +698,10 @@ footer a {
     text-align: center;
   }
 
+  .worker {
+    padding: 20px 40px;
+  }
+
   .workers {
     justify-content: center;
   }
@@ -640,6 +709,7 @@ footer a {
   .worker {
     width: 60%;
   }
+
 
   footer {
     flex-direction: column;
