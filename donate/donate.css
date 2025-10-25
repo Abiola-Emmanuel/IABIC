@@ -93,7 +93,6 @@ nav a {
 .nav-links {
   display: flex;
   gap: 30px;
-  /* margin-left: 50px; */
 }
 
 .nav-links a {

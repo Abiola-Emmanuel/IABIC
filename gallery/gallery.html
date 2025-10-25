@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALLERY</title>
+  <link rel="shortcut icon" href="/images/logo-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/glightbox-3.3.0/dist/css/glightbox.min.css">
+</head>
+
+<body id="body">
+
+  <div class="menuOverlay" id="menuOverlay">
+    <button onclick="closeMenu()"><i class="fa fa-close"></i></button>
+    <a href="/index.html">HOME</a>
+    <a href="/about/about.html">ABOUT</a>
+    <a href="/donate/donate.html">DONATE</a>
+    <a href="/contact/contact.html">CONTACT</a>
+    <a href="/gallery/gallery.html">GALLERY</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div>
+      <a href="/index.html">
+        <img src="/images/logo-removebg-preview.png" width="50px" alt="">
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="/index.html">HOME</a>
+      <a href="/about/about.html">ABOUT</a>
+      <a href="/donate/donate.html">DONATE</a>
+      <a href="/gallery/gallery.html">GALLERY</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="/contact/contact.html">CONTACT <span><i class="fa fa-arrow-right"></i></span></a>
+      <button onclick="showMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+
+
+  </nav>
+
+  <!-- GALLERY -->
+
+  <div class="gallery">
+    <div class="title">
+      <h2>OUR GALLERY</h2>
+    </div>
+
+
+    <div class="right">
+      <div class="column">
+        <div class="box h4">
+          <a href="/images/g (1).jpg" class="glightbox">
+            <img class="first" src="/images/g (1).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h3">
+          <a href="/images/g (9).jpg" class="glightbox">
+            <img src="/images/g (9).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h4">
+          <a href="/images/g (11).jpg" class="glightbox">
+            <img src="/images/g (11).jpg" alt="Gallery image">
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box h2">
+          <a href="/images/g (12).jpg" class="glightbox">
+            <img src="/images/g (12).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h5">
+          <a href="/images/g (2).jpg" class="glightbox">
+            <img src="/images/g (2).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h1">
+          <a href="/images/g (5).jpg" class="glightbox">
+            <img src="/images/g (5).jpg" alt="Gallery image">
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box h3">
+          <a href="/images/g (3).jpg" class="glightbox">
+            <img src="/images/g (3).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h2">
+          <a href="/images/g (4).jpg" class="glightbox">
+            <img src="/images/g (4).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h5">
+          <a href="/images/g (11).jpg" class="glightbox">
+            <img src="/images/g (11).jpg" alt="Gallery image">
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box h4">
+          <a href="/images/g (6).jpg" class="glightbox">
+            <img src="/images/g (6).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h3">
+          <a href="/images/g (7).jpg" class="glightbox">
+            <img src="/images/g (7).jpg" alt="Gallery image">
+          </a>
+        </div>
+        <div class="box h4">
+          <a href="/images/g (8).jpg" class="glightbox">
+            <img src="/images/g (8).jpg" alt="Gallery image">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script src="/glightbox-3.3.0/dist/js/glightbox.min.js"></script>
+<script>
+
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+  })
+
+  const menuOverlay = document.getElementById('menuOverlay');
+  const overlayButton = document.querySelector('.menuOverlay button')
+
+  function showMenu() {
+    menuOverlay.style.width = '50%';
+    overlayButton.style.display = 'block'
+
+  }
+
+  function closeMenu() {
+    menuOverlay.style.width = '0';
+    overlayButton.style.display = 'none'
+  }
+
+  const footDate = document.getElementById('date')
+
+  const getDate = new Date();
+  const year = getDate.getFullYear()
+
+  footDate.innerHTML = year
+</script>
+
+</html>
