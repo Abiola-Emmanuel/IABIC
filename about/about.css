@@ -80,7 +80,6 @@ nav {
   align-items: center;
   padding: 5px 10px;
   z-index: 1000;
-  color: white;
   transition: background-color;
   transition-duration: 0.4s;
   padding: 10px;
@@ -90,8 +89,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  /* color: rgb(2, 52, 48); */
-  color: white;
+  color: rgb(2, 52, 48);
   font-family: var(--mont);
   font-weight: 700;
   font-size: 13px;
@@ -268,8 +266,9 @@ nav a {
   font-weight: 500;
   background-color: rgb(64, 179, 62);
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 50px;
   position: relative;
+  padding: 20px;
 }
 
 .support span {
@@ -338,7 +337,7 @@ nav a {
 
 .com h2 {
   position: absolute;
-  bottom: 30px;
+  bottom: 15%;
   left: 10px;
   font-size: 20px;
   color: white;
@@ -347,7 +346,7 @@ nav a {
 
 .com p {
   position: absolute;
-  bottom: 0;
+  bottom: 8%;
   color: white;
   left: 10px;
   font-size: 13px;
@@ -412,7 +411,7 @@ nav a {
 
 .values {
   width: 90%;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .values .title {
@@ -422,13 +421,14 @@ nav a {
   line-height: 50px;
   font-family: var(--mont);
   text-align: center;
+  margin: 80px;
 }
 
 .vals {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 70px;
 }
 
 .vals h2 {
@@ -713,6 +713,10 @@ footer a {
     flex-direction: column;
   }
 
+  .values .title {
+    margin: 40px;
+  }
+
   .vision-left,
   .vision-right,
   .mission-left,
@@ -762,6 +766,15 @@ footer a {
     width: 60%;
   }
 
+  .com h2 {
+    bottom: 15%;
+  }
+
+  .com p {
+    bottom: 8%;
+  }
+
+
 
   .socials {
     gap: 10px;
@@ -771,4 +784,10 @@ footer a {
     gap: 10px;
   }
 
+}
+
+@media screen and (max-width: 520px) {
+  .com p {
+    display: none;
+  }
 }

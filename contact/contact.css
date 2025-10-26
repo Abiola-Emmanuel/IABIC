@@ -79,7 +79,6 @@ nav {
   align-items: center;
   padding: 5px 10px;
   z-index: 1000;
-  color: white;
   transition: background-color;
   transition-duration: 0.4s;
   padding: 10px;
@@ -89,8 +88,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  /* color: rgb(2, 52, 48); */
-  color: white;
+  color: rgb(2, 52, 48);
   font-family: var(--mont);
   font-weight: 700;
   font-size: 13px;
@@ -315,8 +313,8 @@ textarea {
 }
 
 .vals p {
-  color: rgb(2, 52, 48);
-  font-weight: 600;
+  color: whitesmoke;
+  font-weight: 400;
 }
 
 .val1,
