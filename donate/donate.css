@@ -289,14 +289,14 @@ footer a {
 .foot {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 30px;
   align-items: center;
   gap: 30px;
 }
 
 .socials {
   display: flex;
-  gap: 30px;
+  gap: 35px;
   align-items: center;
 }
 
