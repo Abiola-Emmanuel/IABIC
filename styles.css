@@ -120,6 +120,7 @@ nav {
   color: white;
   transition: background-color;
   transition-duration: 0.4s;
+  padding: 10px;
 }
 
 nav a {
@@ -162,7 +163,7 @@ nav a {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-right a {
@@ -772,6 +773,10 @@ footer a {
 
   .nav-links {
     display: none;
+  }
+
+  .nav-right a {
+    font-size: 11px;
   }
 
   .nav-right button {

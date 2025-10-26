@@ -75,23 +75,32 @@ nav {
   top: 0;
   right: 0;
   left: 0;
-  width: 100%;
-  background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 5px 10px;
   z-index: 1000;
+  color: white;
+  transition: background-color;
+  transition-duration: 0.4s;
+  padding: 10px;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav a {
   text-decoration: none;
+  /* color: rgb(2, 52, 48); */
   color: white;
   font-family: var(--mont);
   font-weight: 700;
   font-size: 13px;
   line-height: 27px;
 }
+
+
+
+
 
 .nav-links {
   display: flex;
@@ -100,7 +109,6 @@ nav a {
 
 .nav-links a {
   position: relative;
-  color: rgb(2, 52, 48);
 }
 
 .nav-links a::before {
@@ -108,7 +116,6 @@ nav a {
   position: absolute;
   bottom: 0;
   width: 0;
-  /* border-bottom: 3px solid rgb(2, 52, 48); */
   border-bottom: 3px solid rgb(2, 52, 48);
   transition: width;
   transition-duration: 0.4s;
@@ -121,7 +128,7 @@ nav a {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-right a {
@@ -129,6 +136,28 @@ nav a {
   color: white;
   padding: 5px 20px;
   border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-right a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgb(2, 52, 48);
+  transition: width;
+  z-index: -1;
+  transition-duration: var(--transition-duration);
+}
+
+.nav-right a:hover::before {
+  width: 100%;
 }
 
 .menu {
@@ -140,7 +169,7 @@ nav a {
   border-radius: 100%;
   display: none;
   transition: transform;
-  transition-duration: 0.4s
+  transition-duration: var(--transition-duration);
 }
 
 .mode {
@@ -151,9 +180,8 @@ nav a {
   font-size: 20px;
   border-radius: 100%;
   transition: transform;
-  transition-duration: 0.4s
+  transition-duration: var(--transition-duration);
 }
-
 
 .nav-right button:hover {
   transform: scale(1.1);
@@ -655,6 +683,10 @@ footer a {
 
   .nav-links {
     display: none;
+  }
+
+  .nav-right a {
+    font-size: 11px;
   }
 
   .nav-right button {
