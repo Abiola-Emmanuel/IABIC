@@ -217,7 +217,7 @@ nav a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 
@@ -472,6 +472,7 @@ nav a {
   line-height: 50px;
   font-family: var(--mont);
   text-align: left;
+  margin: 30px 0px;
 }
 
 .workers {
@@ -483,6 +484,7 @@ nav a {
 .worker {
   width: 23%;
   display: flex;
+  gap: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -511,6 +513,8 @@ nav a {
 
 .worker img {
   border-radius: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .worker-social {
